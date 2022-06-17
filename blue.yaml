@@ -2,6 +2,7 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: blue-app
+  namespace: psc-exemplos
   labels:
     app: blue-app
 spec:
