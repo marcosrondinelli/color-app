@@ -5,8 +5,9 @@ metadata:
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:
-  rules:
-  - http:
+ rules:
+   - host: hello.com
+     http:
       paths:
         - path: /red
           pathType: Prefix
@@ -29,6 +30,7 @@ spec:
               name: blue-service
               port:
                 number: 5678
-# Neste arquivo não ha a entrada -host, dessa forma
-# qualquer host/IP que chegar com /red, /green ou /blue
-# sera redirecionado ao servico interno correspondente
+
+# O host hello.com/red, /blue ou /green sera 
+# redirecionado ao servico interno correspondente
+
