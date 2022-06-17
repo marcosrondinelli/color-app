@@ -18,6 +18,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: blue-service
+  namespace: psc-exemplos
 spec:
   selector:
     app: blue-app
