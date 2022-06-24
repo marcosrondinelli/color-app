@@ -5,6 +5,7 @@ metadata:
   namespace: psc-exemplos
   labels:
     app: green-app
+    clustergroup: psc-cluster-grp-01
 spec:
   containers:
     - name: green-app
