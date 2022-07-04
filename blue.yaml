@@ -4,8 +4,7 @@ metadata:
   name: blue-app
   namespace: psc-exemplos
   labels:
-    app: blue-app
-    clustergroup: psc-cluster-grp-01 
+    app: blue-app    
 spec:
   containers:
     - name: blue-app

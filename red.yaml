@@ -4,8 +4,7 @@ metadata:
   name: red-app
   namespace: psc-exemplos
   labels:
-    app: red-app
-    clustergroup: psc-cluster-grp-01
+    app: red-app    
 spec:
   containers:
     - name: red-app
